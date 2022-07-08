@@ -1,0 +1,1369 @@
+Welcome on Screen
+
+XML 
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/welcome_to_rk_university"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+ParentActivity set 
+
+<activity android:name=".MainActivity" android:parentActivityName=".MainActivity">
+    </activity>
+
+
+SetActionbar Name 
+getSupportActionBar().setTitle("About");
+
+getSupportActionBar().hide();
+
+
+
+Xml Design 
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/pink"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/facebook"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/_21soeca21048"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="@string/kishan"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="@string/vitthlbhai"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="@string/sakhiya"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="@string/email"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="@string/password"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="@string/Gender"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="@string/city"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+XML desing for Login
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/login_here"
+        android:textColor="@color/purple_500"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/enter_email"
+        app:endIconMode="clear_text"
+        app:helperText="ksakhiya622@gmail.com"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlogin"
+        app:startIconContentDescription="Icon"
+        app:startIconDrawable="@drawable/ic_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtLemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true"
+        android:hint="@string/enter_password"
+        app:helperTextEnabled="true"
+        app:helperText="!#PIN38on"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtemail"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtLPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/click_me"
+        app:icon="@drawable/ic_login"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+MainActivity.java
+
+
+Button btnClick;
+EditText edtLEmail, edtLPassword;
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+
+    btnClick = findViewById(R.id.btnlogin);
+    edtLEmail = findViewById(R.id.edtLemail);
+    edtLPassword = findViewById(R.id.edtLPassword);
+
+    btnClick.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+
+            String email = edtLEmail.getText().toString().trim();
+            String pass = edtLPassword.getText().toString();
+
+            if (email.equals("admin@gmail.com") && pass.equals("admin")){
+
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(intent);
+
+            }
+            else {
+                Toast.makeText(MainActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+            }
+        }
+    });
+}
+
+
+
+
+
+
+Splash screen java code 
+
+Splash.java
+
+TimerTask timerTask = new TimerTask() {
+    @Override
+    public void run() {
+        Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+        startActivity(intent);
+
+    finish();
+    }
+};
+
+Timer timer = new Timer();
+timer.schedule(timerTask,2000);
+
+
+Validation in java file for login 
+
+private static final Pattern PASS_P = Pattern.compile(
+        "^(?=.*[0-9])" +
+    "(?=.*[a-z])" +
+        "(?=.*[A-Z])" +
+        "(?=.*[@#$%^&+=])" +
+        "(?=\\S+$).{4,}"+ //not white space and minimum 4 character
+        "$");
+
+Button btnClick;
+EditText edtLEmail, edtLPassword;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    btnClick = findViewById(R.id.btnlogin);
+    edtLEmail = findViewById(R.id.edtLemail);
+    edtLPassword = findViewById(R.id.edtLPassword);
+
+
+    btnClick.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            String email = edtLEmail.getText().toString().trim();
+            String pass = edtLPassword.getText().toString();
+
+            if (email.equals("")){
+                Toast.makeText(MainActivity.this, "Filed is Empty", Toast.LENGTH_SHORT).show();
+
+            }else if (pass.equals("")){
+                Toast.makeText(MainActivity.this, "Filed is Empty", Toast.LENGTH_SHORT).show();
+            }else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+                Toast.makeText(MainActivity.this, "Email Not Match", Toast.LENGTH_SHORT).show();
+            }else if (!PASS_P.matcher(pass).matches()){
+                Toast.makeText(MainActivity.this, "Password is Weak", Toast.LENGTH_SHORT).show();
+            }
+            else {
+             Intent intent = new Intent(MainActivity.this,WelcomeActivity.class);
+             startActivity(intent);
+            }
+        }
+    });
+
+Option  Menu java file 
+
+XML for menu file 
+
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/setting" android:title="Setting">Setting</item>
+    <item android:id="@+id/profile" android:title="Profile">Profile</item>
+</menu>
+
+
+@Override
+public boolean onCreatePanelMenu(int featureId, @NonNull Menu menu) {
+    getMenuInflater().inflate(R.menu.menus,menu);
+    return super.onCreatePanelMenu(featureId, menu);
+  }
+
+@Override
+public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+    int id = item.getItemId();
+
+    switch (id)
+    {
+        case R.id.setting:
+            Toast.makeText(this, "Setting Click", Toast.LENGTH_SHORT).show();
+            break;
+
+        case R.id.profile:
+            Toast.makeText(this, "Profile Click", Toast.LENGTH_SHORT).show();
+
+            break;
+    }
+    return super.onOptionsItemSelected(item);
+
+}
+
+
+Checkbox and radio button java code with another activity data send
+
+        if(chkStatus.isChecked())
+                {
+                    chk="Accept";
+                }
+                else
+                {
+//                    Toast.makeText(HomeActivity.this, "Accept Condition", Toast.LENGTH_SHORT).show();
+                    chk="Denie";
+                }
+
+
+                int id = radioGroup.getCheckedRadioButtonId();
+                rdobtn = findViewById(id);
+                String tdo = rdobtn.getText().toString();
+
+                if(tdo.equals(""))
+                {
+                    Toast.makeText(HomeActivity.this, "Please Select Gender", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                Intent intent = new Intent(HomeActivity.this, WelcomeActivity.class);
+                intent.putExtra("fname",valfname);
+                intent.putExtra("lname",vallname);
+                intent.putExtra("email",valemail);
+                intent.putExtra("gender",tdo);
+                intent.putExtra("city",valcity);
+                intent.putExtra("chk",chk);
+                startActivity(intent);
+            }
+
+Other Activity receive data 
+
+Bundle bundle = getIntent().getExtras();
+String fname = bundle.getString("fname");
+String lname = bundle.getString("lname");
+String email = bundle.getString("email");
+String gender = bundle.getString("gender");
+String city = bundle.getString("city");
+String chk = bundle.getString("chk");
+
+txtData.setText(" "+fname+" "+lname+" "+email+" "+gender+" "+city+" "+chk);
+
+
+SharePreference in login  screen 
+
+Splash screen code
+TimerTask timerTask = new TimerTask() {
+    @Override
+    public void run() {
+        SharedPreferences preferences = getSharedPreferences("login", MODE_PRIVATE);
+        Boolean value = preferences.getBoolean("flag", false);
+
+        Log.i("value","Running Successful..");
+
+        Intent intent;
+
+        if (value) {
+            intent = new Intent(SplashActivity.this, HomeActivity.class);
+        } else {
+            intent = new Intent(SplashActivity.this, LoginActivity.class);
+
+        }
+        startActivity(intent);
+        finish();
+    }
+};
+
+Timer timer = new Timer();
+timer.schedule(timerTask, 2000);
+
+
+LoginActivity
+
+btnlogin.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        SharedPreferences preferences = getSharedPreferences("login",MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean("flag",true);
+        editor.commit();
+        Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+        startActivity(intent);
+    }
+});
+
+
+Logout activity
+
+btnlogout.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        SharedPreferences preferences = getSharedPreferences("login",MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean("flag",false);
+        editor.commit();
+        startActivity(new Intent(HomeActivity.this,LoginActivity.class));
+        finish();
+    }
+});
+
+Call Phone and SMS send XML
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:text="6353329149"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtnumber" />
+
+    <EditText
+        android:id="@+id/edtnumbersms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="6353329149"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncall" />
+
+    <EditText
+        android:id="@+id/edtsms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Hello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtnumbersms" />
+
+    <Button
+        android:id="@+id/btnsms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="SMS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtsms" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+MainActivity.java
+
+    EditText edtphone,edtnumbersms,edtsms;
+    Button btncall,btnsms;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        edtphone = findViewById(R.id.edtnumber);
+        btncall = findViewById(R.id.btncall);
+        edtnumbersms = findViewById(R.id.edtnumbersms);
+        btnsms = findViewById(R.id.btnsms);
+        edtsms = findViewById(R.id.edtsms);
+
+        btncall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              //  long number = Long.parseLong(edtphone.getText().toString().trim());
+                try{
+                    Intent intent = new Intent();
+                    intent.setAction(Intent.ACTION_CALL);
+                    intent.setData(Uri.parse("tel:"+edtphone.getText().toString().trim()));
+                    startActivity(intent);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        btnsms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+                    if(checkSelfPermission(Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED){
+                        sendsms();
+                    }else {
+                        requestPermissions(new String[]{Manifest.permission.SEND_SMS},1);
+                    }
+                }
+            }
+        });
+    }
+
+    private void sendsms() {
+        String number = edtnumbersms.getText().toString().trim();
+        String sms = edtsms.getText().toString().trim();
+        try {
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage(number,null,sms,null,null);
+            Toast.makeText(this, "send SMS", Toast.LENGTH_SHORT).show();
+        }catch (Exception e){
+            e.printStackTrace();
+            Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show();
+        }
+    }
+}
+
+
+Listview
+
+XML
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+Listview In java file
+
+ListView listView = findViewById(R.id.listView);
+
+String[] city = {
+        "Rajkot",
+        "Bharuch",
+        "Dang",
+        "Junagdh",
+        "Mahesana",
+        "Somanath",
+        "Sabarkatha",
+        "Banaskatha",
+        "Botad",
+        "Dahod",
+        "Surandranagar"
+};
+
+ArrayAdapter arrayAdapter = new ArrayAdapter(
+        this,
+        android.R.layout.simple_list_item_1,
+        city);
+
+listView.setAdapter(arrayAdapter);
+
+
+
+
+
+
+
+
+CustomListView 
+
+Activity in xml
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+Item_list activity create
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/myimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@color/purple_500"/>
+
+    <TextView
+        android:id="@+id/txtcarname"
+        android:layout_toRightOf="@id/myimg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="Car"/>
+
+    <TextView
+        android:id="@+id/txtcarcname"
+        android:layout_toRightOf="@id/myimg"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="50"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:layout_below="@id/txtcarname"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:text="Car"/>
+
+
+</RelativeLayout>
+
+
+MainActivity.java
+
+ListView listView;
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    listView = findViewById(R.id.listview);
+
+
+    ArrayList<Car> arrayList = new ArrayList<>();
+
+    arrayList.add(new Car(R.drawable.car1,"Swift","Suzuki"));
+    arrayList.add(new Car(R.drawable.car2,"Verna","Honda"));
+    arrayList.add(new Car(R.drawable.car3,"Figo","Hundia"));
+    arrayList.add(new Car(R.drawable.car4,"i20","Hundia"));
+    arrayList.add(new Car(R.drawable.car5,"Ameze","Honda"));
+    arrayList.add(new Car(R.drawable.car6,"Aulto","Suzuki"));
+
+    CustomAdapter customAdapter = new CustomAdapter(this,R.layout.list_row,arrayList);
+
+    listView.setAdapter(customAdapter);
+
+
+Createclass custom Adapter 
+
+
+public class CustomAdapter extends ArrayAdapter<Car> {
+
+    private Context context;
+    private int resource;
+
+    public CustomAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Car> objects) {
+        super(context, resource, objects);
+
+        this.context = context;
+        this.resource = resource;
+    }
+
+    @NonNull
+    @Override
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+
+        convertView = layoutInflater.inflate(resource,parent,false);
+
+        ImageView imageView = convertView.findViewById(R.id.myimg);
+
+        TextView txtcarname = convertView.findViewById(R.id.txtcarname);
+
+        TextView txtcarcname = convertView.findViewById(R.id.txtcarcname);
+
+        imageView.setImageResource(getItem(position).getImg());
+
+        txtcarname.setText(getItem(position).getCarname());
+
+        txtcarcname.setText(getItem(position).getCarcname());
+
+        return convertView;
+    }
+}
+
+Car class create in java
+
+public class Car{
+     int img;
+     String carname;
+     String carcname;
+
+    public Car(int img, String carname, String carcname) {
+        this.img = img;
+        this.carname = carname;
+        this.carcname = carcname;
+    }
+
+    public int getImg() {
+        return img;
+    }
+
+    public void setImg(int img) {
+        this.img = img;
+    }
+
+    public String getCarname() {
+        return carname;
+    }
+
+    public void setCarname(String carname) {
+        this.carname = carname;
+    }
+
+    public String getCarcname() {
+        return carcname;
+    }
+
+    public void setCarcname(String carcname) {
+        this.carcname = carcname;
+    }
+}
+
+
+Alert Dialog
+
+MainActivity.java 
+
+btnAlert = findViewById(R.id.btnAlert);
+
+AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+btnAlert.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+
+        builder.setTitle("Title");
+        builder.setMessage("Message");
+        builder.setIcon(R.drawable.ic_icon);
+
+        builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Log.i("mm","show Yes");
+                Toast.makeText(AlertDialogActivity.this, "Yes", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dd, int which) {
+                dd.cancel();
+                Log.i("dialog","show cancel");
+
+                Toast.makeText(AlertDialogActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        builder.setNeutralButton("done", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Log.i("dialog","show neutral");
+
+                Toast.makeText(AlertDialogActivity.this, "Done", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+    }
+});
+
+
+Contex Menu
+
+MainActivity.java
+
+    ListView listView;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_contextmenu);
+
+        listView = findViewById(R.id.listview);
+
+        String []name = {"Amit","Raj","Jay","Nirali","Kishan","Dhara","Devang"};
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                ContextMenuActivity.this,
+                android.R.layout.simple_list_item_1,
+                name
+        );
+
+        listView.setAdapter(adapter);
+
+        registerForContextMenu(listView);
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.context_menu,menu);
+        menu.setHeaderTitle("Title");
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+//        return super.onContextItemSelected(item);
+
+        if (item.getItemId() == R.id.sms)
+        {
+            Toast.makeText(this, "SMS", Toast.LENGTH_SHORT).show();
+        }else if (item.getItemId() == R.id.call){
+            Toast.makeText(this, "Call", Toast.LENGTH_SHORT).show();
+        }
+
+        return true;
+    }
+
+
+
+Recycler view
+
+XML main acitivy
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rcview"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+XML Item_list
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+MainActivity.java
+
+    ArrayList<User> list;
+    MyAdapter myAdapter;
+    RecyclerView recyclerView;
+    Context  context;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        recyclerView = findViewById(R.id.rcview);
+
+        myAdapter = new MyAdapter(list);
+
+        list = generateData();
+
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        recyclerView.setAdapter(myAdapter);
+
+        myAdapter.notifyDataSetChanged();
+    }
+
+    private ArrayList<User> generateData() {
+        ArrayList<User> list = new ArrayList<User>();
+        list.add(new User("kishan"));
+        return list;
+    }
+
+MyAdpter.class
+
+
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
+
+    ArrayList<User> list;
+    public MyAdapter(ArrayList<User> list) {
+    this.list = list;
+    }
+
+    @NonNull
+    @Override
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.itemlist,parent,false);
+        return new MyViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        holder.txtname.setText(list.get(position).getName());
+    }
+
+    @Override
+    public int getItemCount() {
+        return list.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder{
+        TextView txtname;
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            txtname = itemView.findViewById(R.id.txtname);
+        }
+    }
+
+}
+
+User.class
+public class User {
+    private String name;
+
+    public User(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+
+
+
+jsonData
+
+Same code as recyclar view and add new json code only 
+
+
+        ArrayList<String> formula = new ArrayList<>();
+        ArrayList<String> url = new ArrayList<>();
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rcview);
+        // set a LinearLayoutManager with default vertical orientation
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        try {
+            // get JSONObject from JSON file
+            JSONObject obj = new JSONObject(loadJSONFromAsset());
+            // fetch JSONArray named users
+            JSONArray userArray = obj.getJSONArray("users");
+            // implement for loop for getting users list data
+            for (int i = 0; i < userArray.length(); i++) {
+                // create a JSONObject for fetching single user data
+                JSONObject userDetail = userArray.getJSONObject(i);
+                // fetch email and name and store it in arraylist
+                formula.add(userDetail.getString("formula"));
+                url.add(userDetail.getString("url"));
+                // create a object for getting contact data from JSONObject
+
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        //  call the constructor of CustomAdapter to send the reference and data to Adapter
+        UserAdapter customAdapter = new UserAdapter(MainActivity.this,formula,url);
+        recyclerView.setAdapter(customAdapter); // set the Adapter to RecyclerView
+    }
+
+    private String loadJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getAssets().open("data.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
+    }
+
+
+}
+
+
+Database 
+
+Create a Connection class 
+
+public class DatabaseConnection extends SQLiteOpenHelper {
+
+    private static final String db_name = "college.db";
+
+    public DatabaseConnection(@Nullable Context context) {
+        super(context, db_name, null, 1);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+        String qry = "create table student(id integer primary key autoincrement, name text, branch text)";
+        sqLiteDatabase.execSQL(qry);
+    }
+
+    public boolean insert_data(String name, String branch) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("name", name);
+        cv.put("branch", branch);
+        long result = db.insert("student", null, cv);
+        if (result == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public boolean updateinfo(String name, String branch) {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("branch", branch);
+
+        Cursor cursor = sqLiteDatabase.rawQuery("select * from student where name=?", new String[]{name});
+
+        if (cursor.getCount() > 0) {
+            long result = sqLiteDatabase.update("student" ,contentValues,"name=?", new String[]{name});
+            if (result == -1)
+                return false;
+            else
+                return true;
+        }
+        else
+            return false;
+    }
+
+
+    public boolean deleteinfo(String name)
+    {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("delete from student where name=?",new String[] {name});
+        if (cursor.getCount()>0)
+        {
+            long result = sqLiteDatabase.delete("student", "name=?", new String[]{name});
+            if (result == -1)
+                return false;
+            else
+                return true;
+        }else {
+            return false;
+        }
+
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+        sqLiteDatabase.execSQL("drop table if exists student");
+    }
+
+    public Cursor getInfo() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("select * from student ", null);
+        return cursor;
+    }
+}
+
+
+Mainactivity.java	
+
+
+    Button btninsert,btnview,btnupdate,btndelete;
+    EditText edtname, edtbranch;
+//    DatabaseConnection dbc;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        DatabaseConnection dc = new DatabaseConnection(this);
+//        dbc = new DatabaseConnection(this);
+
+//        SQLiteDatabase sd = dc.getReadableDatabase();
+//
+        btninsert = findViewById(R.id.btninsert);
+        btnupdate = findViewById(R.id.btnupdate);
+        btndelete = findViewById(R.id.btndelete);
+        btnview = findViewById(R.id.btnview);
+        edtname = findViewById(R.id.edtname);
+        edtbranch = findViewById(R.id.edtbranch);
+
+
+        btninsert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String name = edtname.getText().toString();
+                String branch = edtbranch.getText().toString();
+
+                if(name.equals("") || branch.equals(""))
+                {
+                    Toast.makeText(MainActivity.this, "Fill the Filed", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    boolean ans = dc.insert_data(name, branch);
+                    if(ans == true)
+                    {
+                        Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                    {
+                        Toast.makeText(MainActivity.this, "Fail", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+
+            }
+        });
+
+        btnview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Cursor cursor = dc.getInfo();
+
+                if(cursor.getCount()==0)
+                {
+                    Toast.makeText(MainActivity.this, "Data Not Found", Toast.LENGTH_SHORT).show();
+                }
+
+                StringBuffer stringBuffer = new StringBuffer();
+
+                while (cursor.moveToNext())
+                {
+                    stringBuffer.append("Name is "+ cursor.getString(1)+"\n");
+                    stringBuffer.append("Branch is "+ cursor.getString(2)+"\n\n");
+                }
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+                builder.setCancelable(true);
+                builder.setTitle("Show");
+
+                builder.setMessage(stringBuffer.toString());
+                builder.show();
+
+            }
+        });
+
+        btndelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String name = edtname.getText().toString();
+                Boolean result = dc.deleteinfo(name);
+                if (result == true)
+                    Toast.makeText(MainActivity.this, "Delete", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainActivity.this, "Not Delete", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnupdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String name = edtname.getText().toString();
+                String branch = edtbranch.getText().toString();
+
+                Boolean b = dc.updateinfo(name,branch);
+
+                if(b == true)
+                    Toast.makeText(MainActivity.this, "update", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainActivity.this, "Not update", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+}
+
+
+Snackbar 
+
+Method 1
+Snackbar.make(findViewById(R.id.root_layout), result, Snackbar.LENGTH_LONG)
+        .setAction("Dismiss", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        }).show();
+
+Method 2
+final Snackbar snackBar = Snackbar.make(findViewById(android.R.id.content), "Snackbar Message", Snackbar.LENGTH_LONG);
+
+        snackBar.setAction("Action Message", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Call your action method here
+                snackBar.dismiss();
+            }
+        });
+        snackBar.show();
+
+Method 3
+Snackbar snackbar = Snackbar.make(relativeLayout, "Your Message", Snackbar.LENGTH_INDEFINITE);
+            snackbar.setAction("dismiss", new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    snackbar.dismiss();
+                }
+            });
+
+            snackbar.show();
