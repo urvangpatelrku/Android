@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Tutorial07</string>
+    <string name="username">Enter Username</string>
+    <string name="password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="newuser">New User? Register here</string>
+    <string name="login_here">Login Here</string>
+    <string name="register">Register</string>
+    <string name="register_here">Register Here</string>
+    <string name="firstname">Enter Firstname</string>
+    <string name="lastname">Enter Lastname</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="status">Terms &amp; Condition</string>
+    <string name="logout">Logout</string>
+    <string name="about">About</string>
+    <string name="tutorial07">Tutorial 07</string>
+
+    <string-array name="city">
+        <item>Ahmedabad</item>
+        <item>Rajkot</item>
+        <item>Pune</item>
+        <item>Surat</item>
+        <item>Mumbai</item>
+    </string-array>
+</resources>

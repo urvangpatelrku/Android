@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Tutorial05</string>
+    <string name="register">Register</string>
+    <string name="registration">Registration</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last name</string>
+    <string name="username">Enter Email</string>
+    <string name="password">Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="tutorial_05">Tutorial 05</string>
+    <string name="splash">Splash</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="status">Condition</string>
+    <string name="profile">Profile</string>
+    <string name="helper_text">Contains A to Z,a to z,0 to 9</string>
+
+    <string-array name="cityList">
+        <item>Rajkot</item>
+        <item>Ahmedabad</item>
+        <item>Surat</item>
+        <item>Baroda</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+    </string-array>
+</resources>

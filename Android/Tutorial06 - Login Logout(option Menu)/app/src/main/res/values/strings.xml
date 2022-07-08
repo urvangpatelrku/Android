@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tutorial06</string>
+    <string name="login">Login</string>
+    <string name="password">Enter Password</string>
+    <string name="username">Enter Username</string>
+    <string name="welcome">Welcome</string>
+    <string name="tutorial_06">Tutorial 06</string>
+    <string name="splash">Splash</string>
+    <string name="logout">Logout</string>
+</resources>
